@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Teacher"
+             x:Class="Teacher.MainPage">
+
+    <StackLayout>
+        <Label Text="Skriv ett ord" />
+        <Entry x:Name="Word" />
+        <Button Text="Översätt" Clicked="Translate_OnClicked" />
+        <Label x:Name="TranslatedWord" />
+
+        <Label Text="Testa mig" />
+        <Button Text="Kör" Clicked="Random_OnClicked" />
+        <Label x:Name="RandomWord" />
+        <Entry x:Name="RandomTranslatedWord" />
+        <Button Text="Ok?" Clicked="TranslateRandom_OnClicked" />
+    </StackLayout>
+
+</ContentPage>
